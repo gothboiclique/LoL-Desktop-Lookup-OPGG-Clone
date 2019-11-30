@@ -1,0 +1,17 @@
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\Cain's League Tool.exe.config
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\Cain's League Tool.exe
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\Cain's League Tool.pdb
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain_s_League_Tool.Form1.resources
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain_s_League_Tool.Properties.Resources.resources
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain's League Tool.csproj.GenerateResource.cache
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain's League Tool.csproj.CoreCompileInputs.cache
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain's League Tool.csproj.CopyComplete
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain's League Tool.exe
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain's League Tool.pdb
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\RiotNet.dll
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\bin\Debug\RiotNet.xml
+C:\Users\Joel\source\repos\League of Legends Tool\Cain's League Tool\obj\Debug\Cain's League Tool.csprojAssemblyReference.cache

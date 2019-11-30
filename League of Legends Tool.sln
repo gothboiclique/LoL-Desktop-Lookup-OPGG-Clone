@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain's League Tool", "Cain's League Tool\Cain's League Tool.csproj", "{53C009CA-35B3-49E1-95D1-88C206A8B06E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53C009CA-35B3-49E1-95D1-88C206A8B06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C009CA-35B3-49E1-95D1-88C206A8B06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C009CA-35B3-49E1-95D1-88C206A8B06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C009CA-35B3-49E1-95D1-88C206A8B06E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2794BFF6-A140-422F-B139-B718A5D4D050}
+	EndGlobalSection
+EndGlobal
