@@ -1,2 +1,2 @@
-# LoL Desktop Lookup OPGG Clone
+# Pocket OP.GG
  
