@@ -1,10 +1,4 @@
 ﻿using RiotNet;
-using RiotNet.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cain_s_League_Tool
 {
@@ -13,7 +7,10 @@ namespace Cain_s_League_Tool
     { 
         public static IRiotClient client = new RiotClient(new RiotClientSettings
         {
-            ApiKey = "RGAPI-d8a114da-7037-462e-b85a-50d7d6ccfb0b"
+            ApiKey = "RGAPI-b4103816-b805-4577-a959-1293abe6e630"
         });
     }
+
+    // https://developer.riotgames.com/
+    // Regenerate a new key every 24 Hours :)
 }

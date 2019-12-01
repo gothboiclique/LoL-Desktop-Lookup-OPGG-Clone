@@ -11,18 +11,37 @@ namespace Cain_s_League_Tool
 {
     class SummonerInformationClass
     { 
+        // Needs Sorted Info
         public static List<ChampionMastery> championMasteries;
         public static List<LeagueEntry> leagueRanks;
         public static string summonerID { get; set; }
         public static long summonerLevel { get; set; }
-        public static string summonerPuuid { get; set; }
         public static string summonerName { get; set; }
         public static int summonerLosses { get; set; }
         public static int summonerIconID { get; set; }
+        public static string summonerIconFullLink { get; set; }
         public static int summonerWins { get; set; }
-        public static double summonerWinPercentage { get; set; }
 
-        public static async Task<string> GrabSummonerID()
+        // Data Grid Info
+        public static string soloQRank { get; set; }
+        public static string soloQWR { get; set; }
+
+        public static string flexThreeRank { get; set; }
+        public static string flexThreeWR { get; set; }
+
+        public static string flexFiveRank { get; set; }
+        public static string flexFiveWR { get; set; }
+
+
+        public static async Task GrabEverything()
+        {
+            await GrabSummonerID();
+            await GrabSummonerLevel();
+            await GrabSummonerIconID();
+            await GetChampionMasteries();
+            await GetLeagueRanks();
+        }
+        private static async Task<string> GrabSummonerID()
         {
             try
             {
@@ -36,43 +55,26 @@ namespace Cain_s_League_Tool
                 return null;
             } 
         }
-
-        public static async Task<long> GrabSummonerLevel()
+        private static async Task<long> GrabSummonerLevel()
         {
             var summonerlevel = await RiotClientSetUpClass.client.GetSummonerBySummonerNameAsync(summonerName, PlatformId.EUW1);
             summonerLevel = summonerlevel.SummonerLevel;
             return summonerlevel.SummonerLevel;
         }
-
-        public static async Task<string> GrabSummonerPuuid()
-        {
-            var summonerpuuid = await RiotClientSetUpClass.client.GetSummonerBySummonerNameAsync(summonerName, PlatformId.EUW1);
-            summonerPuuid = summonerpuuid.Puuid;
-            return summonerpuuid.Puuid; 
-        }
-        public static async Task<int> GrabSummonerIconID()
+        private static async Task<int> GrabSummonerIconID()
         {
             var summonericon = await RiotClientSetUpClass.client.GetSummonerBySummonerNameAsync(summonerName, PlatformId.EUW1);
             summonerIconID = summonericon.ProfileIconId;
+            summonerIconFullLink = $"https://ddragon.leagueoflegends.com/cdn/9.2.1/img/profileicon/{SummonerInformationClass.summonerIconID}.png";
             return summonericon.ProfileIconId;
         }
-        public static async Task GetChampionMasteries()
+        private static async Task GetChampionMasteries()
         {
             championMasteries = await RiotClientSetUpClass.client.GetChampionMasteriesAsync(await GrabSummonerID(), PlatformId.EUW1);
         }
-
-        public static async Task GetLeagueRanks()
+        private static async Task GetLeagueRanks()
         {
             leagueRanks = await RiotClientSetUpClass.client.GetLeagueEntriesBySummonerIdAsync(await GrabSummonerID(), PlatformId.EUW1);
-        }
-
-        public static void GetLeagueStats()
-        {
-            summonerLosses = leagueRanks[0].Losses;
-            summonerWins = leagueRanks[0].Wins;
-            double summonerTotal = summonerWins + summonerLosses;
-
-            summonerWinPercentage = (Convert.ToDouble(summonerWins) / summonerTotal) * 100;
         }
     }
 }
